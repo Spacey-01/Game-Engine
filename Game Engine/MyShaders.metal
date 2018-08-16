@@ -10,20 +10,20 @@
 using namespace metal;
 
 struct VertexIn{
-    float3 position;
-    float4 colour;
+    float3 position [[attribute(0)]];
+    float4 colour [[attribute(1)]];
 };
 
 struct RasterizerData{
     float4 position [[position]];
-    float4 colour;
+    float4 colour ;
 };
-vertex RasterizerData basic_vertex_shader(device VertexIn * vertices [[buffer(0)]], uint vertexID [[ vertex_id]]){
+vertex RasterizerData basic_vertex_shader(const VertexIn vIn [[stage_in]]){
     
     RasterizerData rd;
     
-    rd.position = float4(vertices[vertexID].position, 1);
-    rd.colour = vertices[vertexID].colour;
+    rd.position = float4(vIn.position, 1);
+    rd.colour = vIn.colour;
     
     return rd;
     
