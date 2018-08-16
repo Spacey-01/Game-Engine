@@ -102,10 +102,10 @@
 		3764FCAC211D985D00029767 /* Game Engine */ = {
 			isa = PBXGroup;
 			children = (
-				3764FCB6211D985E00029767 /* Main.storyboard */,
-				376FB538212579A8008331D9 /* Types.swift */,
-				3764FCDD211DADCF00029767 /* GameView.swift */,
-				3764FCDF211DB74500029767 /* MyShaders.metal */,
+				376FB53A212586C9008331D9 /* Core */,
+				376FB53B212586E9008331D9 /* Libraries */,
+				376FB53D21258725008331D9 /* Shaders */,
+				376FB53C21258700008331D9 /* Display */,
 				3764FCDC211D9C4600029767 /* Other Files */,
 			);
 			path = "Game Engine";
@@ -139,6 +139,38 @@
 				3764FCB1211D985D00029767 /* Game_Engine.xcdatamodeld */,
 			);
 			path = "Other Files";
+			sourceTree = "<group>";
+		};
+		376FB53A212586C9008331D9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				376FB538212579A8008331D9 /* Types.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		376FB53B212586E9008331D9 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		376FB53C21258700008331D9 /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				3764FCDD211DADCF00029767 /* GameView.swift */,
+				3764FCB6211D985E00029767 /* Main.storyboard */,
+			);
+			path = Display;
+			sourceTree = "<group>";
+		};
+		376FB53D21258725008331D9 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				3764FCDF211DB74500029767 /* MyShaders.metal */,
+			);
+			path = Shaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

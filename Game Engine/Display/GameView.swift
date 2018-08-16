@@ -2,8 +2,7 @@
 //  GameView.swift
 //  Game Engine
 //
-//  Created by SpaceMan on 10/8/18.
-//  Copyright © 2018 Space. All rights reserved.
+//  Created by Space on 10/8/18.
 //
 
 import MetalKit
@@ -61,9 +60,9 @@ class GameView: MTKView {
         //Color
         vertexDescriptor.attributes[1].format = .float4
         vertexDescriptor.attributes[1].bufferIndex = 0
-        vertexDescriptor.attributes[1].offset = float3.size()
+        vertexDescriptor.attributes[1].offset = float3.size
         
-        vertexDescriptor.layouts[0].stride = Vertex.stride()
+        vertexDescriptor.layouts[0].stride = Vertex.stride
         
         
         

@@ -2,8 +2,7 @@
 //  MyShaders.metal
 //  Game Engine
 //
-//  Created by SpaceMan on 10/8/18.
-//  Copyright © 2018 Space. All rights reserved.
+//  Created by Space on 10/8/18.
 //
 
 #include <metal_stdlib>
